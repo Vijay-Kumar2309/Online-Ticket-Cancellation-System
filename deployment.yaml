@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: ticket-app
-        image: your-dockerhub-username/ticket-app:latest
+        image: 23mis0432/ticket-app:latest
         ports:
         - containerPort: 8080
