@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ticket-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ticket-app
+  template:
+    metadata:
+      labels:
+        app: ticket-app
+    spec:
+      containers:
+      - name: ticket-app
+        image: your-dockerhub-username/ticket-app:latest
+        ports:
+        - containerPort: 8080
